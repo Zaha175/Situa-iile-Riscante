@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test Alcool</title>
+<style>
+/* ... (same CSS as before) ... */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#intrebare {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#intrebare:hover {
+    opacity: 0.8;
+}
+
+.raspuns-container {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Stil pentru containerul video */
+.video-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    margin-left: 20px;
+}
+
+b {
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Situații Riscante și Strategii</h1>
+        <div class="button-container">
+            <button id="intrebare">Care ar fi Situațiile Riscante?</button>
+        </div>
+        <div class="raspuns-container"></div>
+        <ul id="raspunsuri" style="display:none;">
+            <li>
+                <b>Crize de viață</b> (moartea unei persoane dragi, boli grave, pierderea locului de muncă, etc.)<br>
+                <i>Strategie:</i> Mă bazez pe sprijinul familiei și al prietenilor apropiați. Caut ajutor emoțional sau profesional dacă este necesar. Nu folosesc alcoolul ca metodă de consolare, ci mă concentrez pe soluții sănătoase, cum ar fi exercițiile fizice, meditația sau discuțiile cu persoane de încredere. Privesc înainte și continui să trăiesc.
+            </li>
+            <li>
+                <b>Reîntâlnirea cu prieteni vechi care oferă alcool:</b><br>
+                <i>Strategie:</i> Refuz politicos, spunând: „Nu, mulțumesc, nu mai beau alcool. Prefer o Cola sau altă băutură nealcoolică.” Dacă presiunile continuă, menționez că voi pleca. Este important să fiu ferm, fără a intra în discuții prelungite.
+            </li>
+            <li>
+                <b>Oferirea alcoolului la o zi de naștere sau o petrecere:</b><br>
+                <i>Strategie:</i> Spun clar și ferm că nu mai beau alcool din cauza problemelor din trecut. Explic că pentru mine orice consum de alcool este o pierdere de timp. Prefer să ciocnesc paharele cu apă sau băuturi nealcoolice și sugerez celor din jur să încerce același lucru. Dacă evenimentul devine inconfortabil, pot pleca.
+            </li>
+            <li>
+                <b>Stresul la locul de muncă:</b><br>
+                <i>Strategie:</i> În situații de stres la serviciu, nu folosesc alcool pentru a mă relaxa. Am învățat să gestionez stresul într-un mod sănătos: iau o pauză, fac o plimbare sau discut cu un coleg de încredere. Practic tehnici de respirație sau sport pentru a mă calma.
+            </li>
+            <li>
+                <b>Singurătatea sau plictiseala:</b><br>
+                <i>Strategie:</i> În trecut, foloseam alcoolul când mă simțeam singur sau plictisit. Acum am o rutină diferită: mi-am găsit hobby-uri noi, fac sport sau petrec timp cu familia. Evit să stau izolat și mă implic în activități care mă bucură.
+            </li>
+            <li>
+                <b>Sărbători sau evenimente tradiționale:</b><br>
+                <i>Strategie:</i> În cadrul sărbătorilor unde se obișnuiește consumul de alcool, aleg să mă concentrez pe atmosfera și pe bucuria momentului, nu pe băut. Mă pregătesc din timp cu băuturi nealcoolice și mă distrez la fel de bine fără alcool.
+            </li>
+            <li>
+                <b>Presiunea socială într-un cerc nou de prieteni:</b><br>
+                <i>Strategie:</i> Atunci când întâlnesc persoane noi, sunt sincer de la început: „Nu consum alcool, am luat această decizie pentru mine.” Ofer această informație calm și încrezător, prevenind astfel presiunile viitoare.
+            </li>
+        </ul>
+           <div class="video-container" style="display: none;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ys7vNuesTcM?si=Z2jfGDZoe5GhLZhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('intrebare').addEventListener('click', function() {
+            var raspunsuri = document.getElementById('raspunsuri');
+            var videoContainer = document.querySelector('.video-container');
+            if (raspunsuri.style.display === 'none') {
+                raspunsuri.style.display = 'block';
+                  videoContainer.style.display = 'flex';
+            } else {
+                raspunsuri.style.display = 'none';
+                 videoContainer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
